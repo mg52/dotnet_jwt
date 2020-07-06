@@ -32,7 +32,7 @@ namespace JWTSample.Services.User
             //if (user == null)
             //    return null;
 
-            if(username != "mustafa" && password != "password")
+            if(username != "mustafa" || password != "password")
             {
                 return null;
             }
