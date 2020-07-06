@@ -26,6 +26,7 @@ namespace JWTSample.Controllers
             if (user == null)
                 return BadRequest("Username or password incorrect!");
 
+
             return Ok(new { Username = user.Value.username, Token = user.Value.token });
         }
 
