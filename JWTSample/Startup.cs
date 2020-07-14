@@ -1,5 +1,4 @@
-﻿using JWTSample.Entities;
-using JWTSample.Helpers;
+﻿using JWTSample.Helpers;
 using JWTSample.Services.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;

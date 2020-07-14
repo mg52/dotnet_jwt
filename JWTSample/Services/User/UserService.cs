@@ -1,5 +1,4 @@
 ﻿using JWTSample.Helpers;
-using JWTSample.Entities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -25,6 +24,7 @@ namespace JWTSample.Services.User
 
         //Ekstra bir DTO veya model oluşturmamak için şimdilik değerlerimi geriye tuple olarak dönüyorum.
         public (string username, string token)? Authenticate(string username, string password)
+        
         {
             //Kullanıcının gerçekten olup olmadığı kontrol ediyorum yoksa direk null dönüyorum.
             //var user = _dbContext.ApplicationUsers.SingleOrDefault(x => x.Username == username && x.Password == password);
